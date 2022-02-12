@@ -83,7 +83,7 @@ function CreateComment(props) {
                   <label>
                     Name*:
                     <input
-                      title="Name to be displayed on comment, 30 symbols max"
+                      title="Name to be displayed in message, 30 symbols max"
                       maxLength="30"
                       name="author_name"
                       required
@@ -107,9 +107,9 @@ function CreateComment(props) {
 
           <p className="comment-input-content">
             <label>
-              Write your comment*:
+              Write your message*:
               <textarea
-                placeholder="Your comment here..."
+                placeholder="Your message here..."
                 maxLength="2000"
                 name="comment_content"
                 required
@@ -125,7 +125,7 @@ function CreateComment(props) {
   } else {
     return (
       <div>
-        <p>Comments are closed</p>
+        <p>Messages are closed</p>
       </div>
     )
   }
