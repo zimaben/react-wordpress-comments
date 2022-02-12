@@ -76,12 +76,12 @@ function WpComments({
   }, [hostUrl, pageId])
 
   if (state.isFetching) {
-    return <p>Loading comments...</p>
+    return <p>Loading messages...</p>
   } else {
     return (
       <div className="comments-area">
         <div className="comments-title">
-          <h2>Comments section ({state.commentsNumber})</h2>
+          <h2>Messages from the Community ({state.commentsNumber})</h2>
         </div>
         <div>
           <ol className="comment-list">
